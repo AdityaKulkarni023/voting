@@ -1,0 +1,58 @@
+.voter-panel {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .party-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .party-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .party-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .party-symbol, .candidate-pic {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+  
+  .party-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .party-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .party-button.selected {
+    background-color: #28a745;
+  }
+  
+  .vote-confirmation {
+    font-size: 18px;
+    color: green;
+    margin-top: 20px;
+  }
+  
