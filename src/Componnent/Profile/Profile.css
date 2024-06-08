@@ -1,0 +1,84 @@
+/* Profile.css */
+
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: -webkit-linear-gradient(#007bff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.profile-table th,
+.profile-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #555555;
+}
+
+.profile-table th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-top: 2px solid #ddd;
+}
+
+.profile-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.profile-table tr:hover td {
+  background-color: #f1f1f1;
+}
+
+.profile-table tr:last-child td {
+  border-bottom: none;
+}
+
+.error {
+  color: #ff4d4d;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+  
